@@ -56,17 +56,19 @@ class BootStrap {
 
 
     def listapacientes= Paciente.list(order: "asc")
+    def keko = Paciente.findAllByNombre(order : "asc")
     def listaconsultas= Consulta.list(order:"asc")
     def listatipopractica = TipoPractica.list(order:"asc")
     def listapractica = Practica.list(order:"asc")
    // def listaConsultasPaciente = Consulta.findAll("from paciente as pa,tipopractica as pra, practica as pract  where pa.id = 1 and pra.codigo=231265 
     //											and pra.	")
 
+    println keko
     println listapacientes
     println listaconsultas
     println listatipopractica
     println listapractica
-    println listaConsultasPaciente
+   // println listaConsultasPaciente
 
 
 
